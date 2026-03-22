@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Ski</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-accueil">
+ <header>
+  <nav>
+  <ul class="nav-sections">
+    <li>
+      <div class="icon-circle">
+        <img src="icones/iconeaccueil.png" alt="Accueil">
+      </div>
+      <a href="code-ski.html">Accueil</a>
+    </li>
+    <li>
+      <div class="icon-circle">
+        <img src="icones/iconestyles.png" alt="Styles de ski"> 
+      </div>
+      <a href="styles.html">Styles de ski</a>
+    </li>
+    <li>
+      <div class="icon-circle">
+        <img src="icones/iconemateriels.png" alt="Matériel"> 
+      </div>
+      <a href="Materiels.html">Le matériels</a>
+    </li>
+    <li>
+      <div class="icon-circle">
+        <img src="icones/iconestation.png" alt="Stations"> 
+      </div>
+      <a href="stations.html">Stations</a>
+    </li>
+  </ul>
+</nav>
+</header>
+
+<main class="content">
+    <section class="section">
+      <h2>Formulaire de contact</h2>
+      <form action="formulaire.php" method="post" class="form-block">
+        
+        <!-- Champ texte -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <br><br>
+
+        <!-- Champ email -->
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Champ mot de passe -->
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Boutons radio -->
+        <p>Genre :</p>
+        <label for="homme">Homme</label>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="femme">Femme</label>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="autres">Autres</label>
+        <input type="radio" id="autres" name="genre" value="autres">
+        <br><br>
+
+        <!-- Champ pays (texte libre) -->
+        <label for="pays">Pays :</label>
+        <input type="text" id="pays" name="pays" required>
+        <br><br>
+
+        <!-- Zone de texte -->
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        <br><br>
+
+        <!-- Boutons -->
+        <button type="submit" class="btn-link">Envoyer</button>
+        <button type="reset" class="btn-link secondary">Réinitialiser</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

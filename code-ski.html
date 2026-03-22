@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- Indique au navigateur qu'on utilise du HTML5 -->
+<html lang="fr"> <!-- La page est en français -->
+<head> <!-- Partie "tête" : infos techniques et invisibles -->
+  <meta charset="UTF-8"> <!-- Encodage des caractères (accents, symboles) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend le site adaptable aux écrans (responsive) -->
+  <title>Site de Ski</title> <!-- Titre qui apparaît dans l’onglet du navigateur -->
+  <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style CSS -->
+</head>
+
+<body class="page-accueil"> <!-- Tout ce qui s’affiche sur la page est ici -->
+ <header> <!-- En-tête du site (logo, menu, slogan) -->
+  <div class="banner"> <!-- Bannière principale -->
+    <video autoplay muted loop class="video-bg"> <!-- Vidéo en fond, qui démarre seule, sans son, et en boucle -->
+      <source src="videos/skifaction.mp4" type="video/mp4"> <!-- Fichier vidéo utilisé -->
+    </video>
+      <img src="icones/logoski.png" alt="Logo" class="logo"> <!-- Logo du site -->
+    </div>
+
+  <nav> <!-- Menu de navigation -->
+  <ul class="nav-sections"> <!-- Liste des sections principales -->
+    <li> <!-- Élément de menu -->
+      <div class="icon-circle"> <!-- Cercle contenant une icône -->
+        <img src="icones/iconeaccueil.png" alt="Accueil"> <!-- Icône Accueil -->
+      </div>
+      <a href="code-ski.html">Accueil</a> <!-- Lien vers la page d’accueil -->
+    </li>
+
+    <li>
+      <div class="icon-circle">
+        <img src="icones/iconestyles.png" alt="Styles de ski"> <!-- Icône Styles -->
+      </div>
+      <a href="styles.html">Styles de ski</a> <!-- Lien vers la page Styles -->
+    </li>
+
+    <li>
+      <div class="icon-circle">
+        <img src="icones/iconemateriels.png" alt="Matériel"> <!-- Icône Matériel -->
+      </div>
+      <a href="Materiels.html">Le matériels</a> <!-- Lien vers la page Matériel -->
+    </li>
+
+    <li>
+      <div class="icon-circle">
+        <img src="icones/iconestation.png" alt="Stations"> <!-- Icône Stations -->
+      </div>
+      <a href="stations.html">Stations</a> <!-- Lien vers la page Stations -->
+    </li>
+  </ul>
+
+  <ul class="nav-sections"> <!-- Deuxième liste pour le formulaire -->
+    <li>
+      <div class="formulaire-square"> <!-- Bloc carré pour le formulaire -->
+      <a href="formulaire.html" class="formulaire-square">Formulaire</a> <!-- Lien vers la page Formulaire -->
+      </div>
+    </li>
+  </ul>
+</nav>
+
+  <div class="slogan">Sur la neige, tout devient plus léger.</div> <!-- Phrase d’accroche -->
+</header>
+
+  <main> <!-- Contenu principal -->
+    <section class="left-section"> <!-- Partie gauche -->
+      <img src="images/extremeskiing.png" alt="Photo gauche"> <!-- Image illustrant le ski -->
+      <p>Le ski de piste, ou ski alpin, est un sport de glisse qui consiste à descendre des pentes enneigées aménagées au sein de domaines skiables. Les pistes sont damées, balisées et classées par niveaux de difficulté, ce qui permet à chacun, du débutant au skieur confirmé, de progresser en sécurité. La pratique repose sur l’utilisation de skis rigides fixés à des chaussures solides, permettant de contrôler la vitesse et la direction grâce à des virages plus ou moins serrés. Les stations de ski sont équipées de remontées mécaniques facilitant l’accès aux différentes pistes, ce qui rend l’activité à la fois accessible et très populaire.</p> <!-- Texte explicatif -->
+    </section>
+
+    <section class="right-section"> <!-- Partie droite -->
+      <p>Au-delà de l’aspect sportif, le ski de piste offre une expérience immersive en pleine montagne, combinant sensations de glisse, maîtrise technique et plaisir du plein air. Les skieurs évoluent dans des paysages variés, allant des larges pistes ensoleillées aux descentes plus techniques et boisées. Cette discipline demande toutefois prudence et respect des consignes de sécurité, notamment le port du casque, la gestion de la vitesse et l’attention aux autres usagers. Le ski de piste séduit ainsi par l’équilibre qu’il propose entre adrénaline, découverte de la nature et convivialité.</p> <!-- Texte complémentaire -->
+      <img src="images/lesarcs.png" alt="Photo droite"> <!-- Image d’une station -->
+    </section>
+  </main>
+
+  <footer> <!-- Pied de page -->
+    <p>2025 Site de Ski.</p> <!-- Mention de l’année -->
+    <p>Titouan SERRI</p> <!-- Auteur du site -->
+  </footer>
+</body>
+</html>

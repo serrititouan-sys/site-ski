@@ -1,0 +1,506 @@
+header {
+  background-color: #00162B;
+  color: white;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 31.875rem;
+  overflow: hidden;
+}
+
+.banner img,
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 1;
+}
+
+.banner .logo {
+  position: absolute;
+  top: 1.25rem; left: 1.25rem;
+  width: 7.5rem;
+  height: auto;
+  z-index: 2;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  grid-template-rows: repeat(2, auto);   /* 2 lignes */
+  gap: 1.5625rem; /* espace entre les blocs */
+  padding: 0.125rem;
+}
+
+/* NAVIGATION  */
+
+.nav-sections {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-sections li {
+  text-align: center;
+}
+
+.nav-sections a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin-top: 0.625rem;
+  transition: color 0.3s;
+}
+
+.nav-sections a:hover {
+  color: #ffae00;
+}
+
+/* page accueil */
+.icon-circle {
+  width: 4.375rem; height: 4.375rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon-circle img {
+  width: 3.125rem; height: 3.125rem;
+  object-fit: contain;
+}
+
+.slogan {
+  height: 3.75rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  color: #ffffff;
+  margin-top: 2.5rem;
+}
+
+/* page accueil */
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5rem 1.25rem;
+  background-color: white;
+}
+
+section {
+  width: 45%;
+  background-color: #e3e3e3;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+}
+
+section img {
+  width: 100%;
+  border-radius: 0.625rem;
+  margin-bottom: 0.9375rem;
+}
+
+/* page styles */
+.style-block-styles {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 2.5rem 0;
+  background: #f9f9f9;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.15);
+  transition: transform 0,10s ease;
+}
+
+.style-block-styles:hover {
+  transform: translateY(-0.3125rem);
+}
+
+.style-block-styles img {
+  width: 40%;
+  border-radius: 0.625rem;
+  object-fit: cover;
+}
+
+.style-text-styles {
+  width: 60%;
+}
+
+.style-text-styles h2 {
+  font-size: 1.8em;
+  color: #1e2a38;
+  margin-bottom: 0.625rem;
+}
+
+.style-text-styles p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.style-block-styles img {
+  width: 50%;
+  height: 62.5rem;
+  border-radius: 0.625rem;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 48rem) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 90%;
+    margin-bottom: 1.25rem;
+  }
+
+  .style-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .style-block img,
+  .style-text {
+    width: 100%;
+  }
+}
+
+.style-links-styles {
+  margin-top: 0.9375rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 0.625rem 1.125rem;
+  border-radius: 0.5rem;
+  background-color: #ffae00;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.2);
+}
+
+.btn-link:hover {
+  background-color: #00bcd4;
+  color: #000000;
+  transform: translateY(-0.125rem);
+}
+
+.btn-link.secondary {
+  background-color: #e3e3e3;
+  color: #00162B;
+  border: 1px solid #00162B;
+}
+
+.btn-link.secondary:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+/* station*/
+
+.style-block-station {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Texte */
+.style-text-station {
+  padding: 0.125rem;
+}
+
+.style-links-station {
+  margin-top: 0.625rem;
+}
+
+.btn-link-station {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.btn-link-station:hover {
+  background: #005fa3;
+}
+
+.style-text-station {
+  font-family: 'Playfair Display', serif; /* police élégante */
+  font-size: 1.1em;                       /* taille lisible */
+  line-height: 1,2;                       /* espace entre lignes */
+  text-align: left;                    
+  color: #000000;  
+  padding: 0.125rem;
+}
+
+.style-block-station img {
+  width: 100%;          /* occupe toute la largeur du bloc */
+  height: 15.625rem;    /* hauteur fixe pour toutes les images */
+  object-fit: cover;    /* recadre l’image sans la déformer */
+  border-radius: 0.625rem;  /* coins arrondis */
+  display: block;
+}
+
+/* NAVIGATION */
+
+nav {
+  background-color: #00162B;
+  padding: 1.375rem 0;
+  text-align: left;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1.25rem;
+  padding: 0.875rem 1.25rem;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #222;
+  border-radius: 0.25rem;
+}
+
+
+/* ----- CONTENU GLOBAL ----- */
+
+main.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 120px auto;
+}
+
+/* ----- SECTIONS ----- */
+
+main.content {
+  width: 90%;
+  max-width: 75rem;
+  margin: 2.5rem auto 7.5rem auto;
+}
+
+/* ----- SECTIONS ----- */
+
+main.content {
+  width: 90%;
+  max-width: 75rem;
+  margin: 2.5rem auto 7.5rem auto;
+}
+
+/* ----- SECTIONS ----- */
+
+.section {
+  background-color: white;
+  padding: 5rem 3.75rem;           /* >>> plus de hauteur */
+  margin-bottom: 5rem;             /* >>> plus d’espace entre sections */
+  border-radius: 0.75rem;
+  box-shadow: 0 0 1.25rem rgba(0,0,0,0.12);
+  min-height: 70vh;                /* >>> chaque section prend ~70% de l’écran */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;         /* >>> centre verticalement */
+}
+
+.section h2 {
+  color: #002e63;
+  font-size: 2.6rem;
+  margin-bottom: 1.5625rem;
+}
+
+.section p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.section img {
+  width: 100%;
+  max-height: 21.875rem;
+  object-fit: cover;
+  border-radius: 0.625rem;
+  margin: 1.5625rem 0 2.1875rem 0;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+  margin-top: 0.9375rem;
+}
+
+.section li {
+  margin: 0.75rem 0;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+  background-color: #00162B;
+  color: white;
+  text-align: center;
+  padding: 0.9375rem 0;
+  font-size: 1rem;
+}
+
+/* ----- RESPONSIVE ----- */
+
+@media (max-width: 48rem) {
+  header h1 {
+      font-size: 2.4rem;
+  }
+
+  nav a {
+      display: block;
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+  }
+
+  .section {
+      padding: 3.125rem 1.25rem;
+      min-height: auto;  /* sur mobile, sections moins grandes */
+  }
+
+  .section img {
+      max-height: 13.75rem;
+  }
+}
+
+.ski-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.25rem;
+padding: 2.5rem;
+justify-items: center;
+}
+
+.ski-item {
+display: flex;
+flex-direction: row;
+width: 12.5rem;
+background-color: white;
+border-radius: 0.5rem;
+box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
+text-align: center;
+padding: 0.625rem;
+}
+
+.ski-item img {
+  width: 100%;
+  height: 11.25rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.ski-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 colonnes */
+  grid-template-rows: repeat(3, auto);    /* 3 lignes */
+  gap: 1.25rem;
+  padding: 1.25rem;
+  justify-items: center;
+}
+
+/* FORMULAIRE */
+.form-block {
+  background-image: url("images/lesarcs.png"); 
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 1.25rem rgba(0,0,0,0.3);
+  color: #fff; /* texte blanc pour contraster */
+  position: relative;
+}
+
+/* voile semi-transparent pour lisibilité */
+.form-block::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* voile noir transparent */
+  border-radius: 0.75rem;
+  z-index: 0;
+}
+
+/* contenu au-dessus du voile */
+.form-block * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* labels et champs */
+.form-block label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.375rem;
+  color: #fff;
+}
+
+.form-block input,
+.form-block textarea,
+.form-block select {
+  width: 100%;
+  padding: 0.625rem;
+  border: none;
+  border-radius: 0.375rem;
+  margin-bottom: 0.9375rem;
+  font-size: 1rem;
+}
+
+.form-block input:focus,
+.form-block textarea:focus,
+.form-block select:focus {
+  outline: none;
+  box-shadow: 0 0 0.375rem rgba(0,188,212,0.6);
+}
+
+/* boutons */
+.form-block button {
+  margin-right: 0.625rem;
+}
+
+.formulaire-square {
+  width: 9.0625rem; height: 1.5625rem;
+  border-radius: 20%;
+  background-color:#0C7BBC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.formulaire-square {
+  object-fit: contain;
+}

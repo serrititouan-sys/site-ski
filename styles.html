@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!-- Indique qu'on utilise du HTML5 -->
+<html lang="fr"> <!-- La langue principale du site est le français -->
+<head> <!-- Partie "tête" : infos techniques -->
+  <meta charset="UTF-8"> <!-- Encodage pour bien afficher les accents -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend le site adaptable aux mobiles -->
+  <title>Styles de Ski</title> <!-- Titre affiché dans l’onglet du navigateur -->
+  <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style CSS -->
+</head>
+
+<body class="page-materiel"> <!-- Tout le contenu visible est ici -->
+    <header> <!-- En-tête du site -->
+        <div class="banner"> <!-- Bannière avec image + logo -->
+            <img src="images/extremeskiing2.png" alt="Montagne enneigée"> <!-- Image décorative -->
+            <img src="icones/logoski.png" alt="Logo" class="logo"> <!-- Logo du site -->
+        </div>
+
+        <nav> <!-- Menu de navigation -->
+            <ul class="nav-sections"> <!-- Liste des liens principaux -->
+              <li> <!-- Élément de menu -->
+                <div class="icon-circle"> <!-- Cercle contenant une icône -->
+                  <img src="icones/iconeaccueil.png" alt="Accueil"> <!-- Icône accueil -->
+                </div>
+                <a href="code-ski.html">Accueil</a> <!-- Lien vers la page d’accueil -->
+              </li>
+
+              <li>
+                <div class="icon-circle">
+                  <img src="icones/iconestyles.png" alt="Styles de ski"> <!-- Icône styles -->
+                </div>
+                <a href="styles.html">Styles de ski</a> <!-- Lien vers la page styles -->
+              </li>
+
+              <li>
+                <div class="icon-circle">
+                  <img src="icones/iconemateriels.png" alt="Matériel"> <!-- Icône matériel -->
+                </div>
+                <a href="Materiels.html">Le matériels</a> <!-- Lien vers la page matériel -->
+              </li>
+
+              <li>
+                <div class="icon-circle">
+                  <img src="icones/iconestation.png" alt="Stations"> <!-- Icône stations -->
+                </div>
+                <a href="stations.html">Stations</a> <!-- Lien vers la page stations -->
+              </li>
+            </ul>
+
+            <ul class="nav-sections"> <!-- Deuxième liste pour le formulaire -->
+              <li>
+                <div class="formulaire-square"> <!-- Bloc carré -->
+                  <a href="formulaire.html" class="formulaire-square">Formulaire</a> <!-- Lien vers formulaire -->
+                </div>
+              </li>
+            </ul>
+        </nav>
+
+        <div class="slogan">Découvrez toutes les manières de glisser sur la neige.</div> <!-- Phrase d’accroche -->
+    </header>
+
+  <main> <!-- Contenu principal -->
+    <!-- Chaque section présente un style de ski -->
+    <section class="style-block-styles"> <!-- Bloc pour le ski alpin -->
+      <img src="images/skialpin.png" alt="Ski alpin"> <!-- Image du style -->
+      <div class="style-text-styles"> <!-- Texte associé -->
+        <h2>Ski Alpin</h2> <!-- Titre du style -->
+        <p>Les skis alpins privilégient stabilité et précision sur piste. Leur noyau bois ou composite assure rigidité, tandis que les carres en acier garantissent une accroche fiable. Le cambre classique optimise la transmission d’énergie et la tenue en virage, avec une spatule relevée pour faciliter l’entrée en courbe.</p> <!-- Description -->
+        <div class="style-links-styles"> <!-- Liens vers produits -->
+          <a href="https://www.tradeinn.com/snowinn/fr/volkl-skis-alpins-m7-mantra/142428276/p?utm_source=google_products&utm_medium=merchant&id_producte=149308578&country=fr" target="_blank" class="btn-link">Haut de gamme</a>
+          <a href="https://www.tradeinn.com/snowinn/fr/fischer-pack-de-skis-alpins-the-curv-gt-76-tpr-rsw-10-powerrail/141402714/p?utm_source=google_products&utm_medium=merchant&id_producte=145222693&country=fr" target="_blank" class="btn-link secondary">Milieu de gamme</a>
+          <a href="https://www.rossignol.com/fr-fr/skis-femme-nova-4-ca-xpress-RAKLI01000.html" target="_blank" class="btn-link secondary">Entrée de gamme</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="style-block-styles"> <!-- Bloc pour le freestyle -->
+      <img src="images/skifreestyle.png" alt="Ski freestyle">
+      <div class="style-text-styles">
+        <h2>Freestyle</h2>
+        <p>Les skis freestyle possèdent une construction légère avec un noyau bois renforcé pour absorber les chocs. Leur forme twin-tip (spatules relevées à l’avant et à l’arrière) permet de skier et d’atterrir en marche avant ou arrière. Le flex est souple pour faciliter les figures et les pressions, tandis que les carres renforcées résistent aux rails et modules du park. Avec une largeur intermédiaire (80–95 mm), ils offrent stabilité et maniabilité pour rotations et sauts.</p>
+        <div class="style-links-styles">
+          <a href="https://www.snowleader.com/arv-100-black-2026-ARMA00488.html" target="_blank" class="btn-link">Haut de gamme</a>
+          <a href="https://www.snowleader.com/revolt-86-2025-VOLK00708.html" target="_blank" class="btn-link secondary">Milieu de gamme</a>
+          <a href="https://www.snowleader.com/omen-85-w-2026-K2__01340.html" target="_blank" class="btn-link secondary">Entrée de gamme</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="style-block-styles"> <!-- Bloc pour le freeride -->
+      <img src="images/skifreeride.png" alt="Ski freeride">
+      <div class="style-text-styles">
+        <h2>Freeride</h2>
+        <p>Les skis freeride sont conçus pour évoluer hors des pistes balisées, dans la poudreuse et les terrains variés. Leur largeur au patin est importante (95–115 mm), offrant une meilleure portance sur neige profonde. La spatule avant présente un rocker prononcé pour faciliter la déjauge et l’entrée en courbe, tandis que le cambre sous le pied assure stabilité et accroche sur neige dure. Le noyau bois, souvent renforcé par des fibres composites, garantit robustesse et absorption des vibrations. Le talon peut être légèrement relevé pour plus de maniabilité, ou plus rigide pour une meilleure tenue en descente engagée</p>
+        <div class="style-links-styles">
+          <a href="https://www.black-crows.com/fr/products/102383" target="_blank" class="btn-link">Haut de gamme</a>
+          <a href="https://factionskis.com/fr/products/dancer-2-ski" target="_blank" class="btn-link secondary">Milieu de gamme</a>
+          <a href="https://elansports.com/fr_fr/ripstick-94-w" target="_blank" class="btn-link secondary">Entrée de gamme</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="style-block-styles"> <!-- Bloc pour le all mountain -->
+      <img src="images/skiallmountain.png" alt="Ski de randonnée">
+      <div class="style-text-styles">
+        <h2>All mountain</h2>
+        <p>Les skis all-mountain offrent polyvalence et équilibre. Avec un patin de 80–95 mm, ils combinent accroche sur piste et portance en neige fraîche. Le rocker avant facilite la maniabilité, tandis que le cambre sous le pied assure stabilité et réactivité. Leur noyau bois renforcé garantit robustesse et dynamisme, idéal pour explorer toute la montagne avec un seul ski.</p>
+        <div class="style-links-styles">
+          <a href="https://www.atomic.com/fr-fr/shop-emea/product/maverick-115-cti-aa7102.html#color=54431" target="_blank" class="btn-link">Haut de gamme</a>
+          <a href="https://k2snow.com/fr-fr/p/blur-76-mens-skis-2026" target="_blank" class="btn-link secondary">Milieu de gamme</a>
+          <a href="https://volkl.com/fr-fr/p/peregrine-x-skis-2026" target="_blank" class="btn-link secondary">Entrée de gamme</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer> <!-- Pied de page -->
+    <p>&copy; 2025 Site de Ski.</p> <!-- Copyright -->
+    <p>Titouan Serri.</p> <!-- Auteur -->
+  </footer>
+</body>
